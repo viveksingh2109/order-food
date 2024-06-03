@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummers</title>
+    <link rel="shortcut icon" href="yummy.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="eatery1.css">
+    <script src="eatery2.js"></script>
+</head>
+<body>
+    <div id="navigation">
+        <nav>
+            <img src="yummy2.jpg" alt="image" height="70" width="70" align="left">
+            <h1>Hungry?... We got you.</h1>
+            <a href="">About us</a>
+            <a href="">Contact us</a>
+            <a href="">Services</a>
+        </nav>
+    </div>
+    <div id = "main">
+        <form onsubmit="return thanksMessage()">
+            <h2>What would you like to eat?</h2>
+            <fieldset>
+                <legend><strong>Fill the form to generate bill and place your order</strong></legend>
+                <h3>Your Info</h3>
+                <label for="fname">First Name: </label><br>
+                <input name="fname" id="fname" placeholder="John" onfocus="this.style.background = 'yellow'" onblur="this.style.background='white'" required><br>
+                <label for="lname">Last Name: </label><br>
+                <input name="lname" id="lname" placeholder="Cena" onfocus="this.style.background = 'yellow'" onblur="this.style.background='white'" required><br>
+                <label for="contact">Contact: </label><br>
+                <input name="contact" id="contact" placeholder="+91" onfocus="this.style.background = 'yellow'" onblur="this.style.background='white'" required>
+                <h3>Starters:</h3>
+                <input type="checkbox" id="N" value="N">Noodles
+                <input type="text" id="Ni" placeholder="Qty" onfocus="this.style.background = 'yellow'" onblur="this.style.background='white'"><br>
+                <input type="checkbox" id="DM" value="DM">Dry Manturian
+                <input type="text" id="DMi" placeholder="Qty" onfocus="this.style.background = 'yellow'" onblur="this.style.background='white'"><br>
+                <input type="checkbox" id="P" value="P">Pakoda
+                <input type="text" id="Pi" placeholder="Qty" onfocus="this.style.background = 'yellow'" onblur="this.style.background='white'">
+                <h3>Meals:</h3>
+                <input type="checkbox" id="C" value="C">Chicken Tadaka with rice
+                <input type="text" id="Ci" placeholder="Qty" onfocus="this.style.background = 'yellow'" onblur="this.style.background='white'"><br>
+                <input type="checkbox" id="PR" value="PR">Paneer Butter masala and Nan (4 Qty.)
+                <input type="text" id="PRi" placeholder="Qty" onfocus="this.style.background = 'yellow'" onblur="this.style.background='white'"><br>
+                <input type="checkbox" id="V" value="V">Veg Thali
+                <input type="text" id="Vi" placeholder="Qty" onfocus="this.style.background = 'yellow'" onblur="this.style.background='white'"><br>
+                <input type="checkbox" id="PT" value="PT">Punjabi Thali
+                <input type="text" id="PTi" placeholder="Qty" onfocus="this.style.background = 'yellow'" onblur="this.style.background='white'"><br>
+                <input type="checkbox" id="S" value="S">Rava Dosa
+                <input type="text" id="Si" placeholder="Qty" onfocus="this.style.background = 'yellow'" onblur="this.style.background='white'"><br>
+                <h3>Desserts:</h3>
+                <input type="checkbox" id="I" value="I">Ice Creams
+                <input type="text" id="Ii" placeholder="Qty" onfocus="this.style.background = 'yellow'" onblur="this.style.background='white'"><br>
+                <input type="checkbox" id="Ca" value="Ca">Chocolate Cake    
+                <input type="text" id="Cai" placeholder="Qty" onfocus="this.style.background = 'yellow'" onblur="this.style.background='white'"><br>
+                <input type="checkbox" id="Cu" value="Cu">Curd
+                <input type="text" id="Cui" placeholder="Qty" onfocus="this.style.background = 'yellow'" onblur="this.style.background='white'"><br><br>
+                <h3>We care about your feedback:</h3>
+                <textarea rows = 5 cols = 30 placeholder="feedback goes here:" onfocus="focus(this)"></textarea><br>
+                <input id="submit" type="submit">
+                <input id="submit" type="reset">
+            </fieldset>
+        </form>
+    </div>
+    <div id="bill">
+        <h1 id="demo0">Click on submit button to generate your bill:</h1>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+    </div>
+    <div id="footer">
+        Thanks for visiting<br>
+        &copy www.yummers.com
+    </div>
+</body>
+</html>

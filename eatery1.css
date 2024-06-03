@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 700px;
+}
+#navigation{
+    border: 3px solid black;
+    box-shadow: 5px 5px 6px grey;
+    padding: 20px;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index: 1000;
+    position:fixed;
+    background-color: white;
+}
+#navigation a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    float: right;
+    margin:20px 80px 0px 0px;
+    padding: 10px;
+    transition: all 0.2s ease;
+}
+#navigation a:hover{
+    background-color: rgb(81, 80, 80);
+    color: white;
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+#navigation img{
+    margin-left: 40px;
+}
+#navigation h1{
+    display: inline-block;
+    font-size: 30px;
+    text-align: left;
+}
+#main{
+    margin-top: 130px;
+    padding: 20px 100px 10px 100px;
+    background: url("back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+form{
+    background-color: rgb(215, 231, 196);
+    border:2px solid black;
+    border-radius: 5%;
+    padding: 50px;
+}
+input{
+    margin: 10px;
+}
+#fname, #lname, #contact{
+    width: 50%;
+    height: 30px;
+}
+#footer{
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+#submit{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 100px;
+}
+#bill{
+    border: 5px solid brown;
+    background-color: burlywood;
+    padding: 20px;
+    color: rgb(120, 31, 31);
+}
+#demo0{
+    color: rgb(120, 31, 31);
+}
+#Ni,#DMi,#Pi,#Ci,#PRi,#Vi,#PTi,#Si,#Ii,#Cai,#Cui{
+    width: 25px;
+}
